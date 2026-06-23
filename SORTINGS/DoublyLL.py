@@ -26,6 +26,12 @@ def length(head):
         head = head.next
     return size
 
+#empty_check
+def is_empty(head):
+    if(head == None):
+        return True
+    return False
+
 
 
 #Insertions
@@ -92,8 +98,50 @@ def insert_after_value(head, pos, value):
     return head
 
 
-updated_linked_list = insert_after_value(updated_list, 2, 67)
-printLL(updated_linked_list)
+#DELETIONS IN DLL
+
+#at head
+def delete_at_head(head):
+    if (is_empty(head)):
+        return None
+    return head.next
+
+#at tail
+def delete_at_tail(head):
+    dummy_head = head
+    while(dummy_head.next != None):
+        dummy_head = dummy_head.next
+    
+    dummy_head.prev.next = None
+    dummy_head.prev = None
+    return head
+
+updated_list = delete_at_tail(updated_list)
+#printLL(updated_list)
+
+#delete at middle
+def delete_at_middle(head):
+    if(is_empty(head) or head.next == None):
+        return None
+    middle = length(head)//2
+    if(length(head) == 2):
+        return delete_at_head(head)
+    dummuy_head = head
+    ct=1
+    while(ct < middle-1):
+        ct+=1
+        dummuy_head = dummuy_head.next
+
+    dummuy_head.next = dummuy_head.next.next
+    dummuy_head.next.prev = dummuy_head
+    return head
+
+updated_list1 = delete_at_middle(updated_list)
+updated_list1 = delete_at_middle(updated_list1)
+printLL(updated_list1)
+
+
+
     
         
 
