@@ -140,7 +140,82 @@ updated_list1 = delete_at_middle(updated_list)
 updated_list1 = delete_at_middle(updated_list1)
 printLL(updated_list1)
 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>My First HTML Page</title>
+  </head>
+  <body>
+    <h5>Welcome to My Website</h5>
 
+    <p>This is my first paragraph.</p>
+    <p>
+      This is my 2nd
+
+      paragraph.
+    </p>
+
+    <h2>Formatting</h2>
+    <p>
+      curated and ranked based on <b>multiple factors</b>, including content
+      relevancy, subject expertise, <i>posting</i> frequency, and freshness of
+      content. Blogs with highest credibility within the <u>Shopping</u> space
+      are ranked higher. This list is updated regularly to ensure it reflects
+      the most active, influential, and valuable log<sub>2</sub> Shopping blogs
+      on the internet today 2<sup>nd</sup>.
+    </p>
+    <address>
+      <a href="mailto:jim@example.com">jim@example.com</a>
+
+      <a href="tel:+14155550132">+1 (415) 555‑0132</a>
+    </address>
+
+    <blockquote cite="https://www.huxley.net/bnw/four.html">
+      <p>
+        Words can be like X-rays, if you use them properly—they'll go through
+        anything. You read and you're pierced.
+      </p>
+    </blockquote>
+    <h2>General Tags</h2>
+
+    <div>
+      <p>
+        group content so it can be easily styled using the class or id
+        attributes, marking a section of a document as being written in a
+        different language (using the lang attribute), and so on.
+      </p>
+      <p>Beware of the leopard</p>
+    </div>
+    <p>
+      Add the <span>basil</span>, <span>pine nuts</span> and
+      <span>garlic</span> to a blender and blend into a paste.
+    </p>
+    <header>
+      <h1>Main Header</h1>
+    </header>
+    <main>
+      <article>
+        <h2>Article 1</h2>
+        <p>Beware of the leopard</p>
+      </article>
+      <article>
+        <h2>Article 2</h2>
+        <p>Beware of the Dogs</p>
+      </article>
+    </main>
+    <footer>
+      Portions of this content are ©1998–2026 by individual mozilla.org
+      contributors. Content available under a Creative Commons license.
+    </footer>
+    <h1>Style and Programming Tags:</h1>
+    <style></style>
+    <script></script>
+  </body>
+</html>
+ 
 
     
         
