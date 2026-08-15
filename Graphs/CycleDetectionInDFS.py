@@ -17,6 +17,7 @@ def dfs(node, parent, adj_list, visited_arr):
         elif(visited_arr[i] == 1 and i != parent):
             return True
 
+    visited_arr[node] = 0
     return False
 
 print(dfs(start, -1, adj_list, visited_arr))
