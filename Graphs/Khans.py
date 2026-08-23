@@ -8,18 +8,14 @@ queue = deque()
 result = []
 
 # Building indegree array
-for node in range(n):
-    for i in Adj[node]:
+for part in Adj:
+    for i in part:
         indegree[i] += 1
-
-print(f"Indegree: {indegree}")
 
 # Adding elements to queue if indegree == 0
 for node in range(n):
     if indegree[node] == 0:
         queue.append(node)
-
-print(f"Initial queue: {list(queue)}")
 
 # BFS
 while queue:
@@ -32,4 +28,4 @@ while queue:
         if indegree[neighbour] == 0:
             queue.append(neighbour)
 
-print(f"Topological Sort Result: {result}")
+print(result)
